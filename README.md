@@ -76,3 +76,12 @@ git branch -M main
 git remote add origin https://github.com/USER/REPO
 git push -u origin main
 ```
+
+# 3. Walking Skeleton Part 2 - Client
+
+## 3.2. Creating the React project
+```bash
+npx create-react-app client-app --use-npm --template typescript
+cd client-app
+npm start
+```
