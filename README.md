@@ -58,3 +58,8 @@ dotnet ef -h
 dotnet ef migrations add InitialCreate -p Persistence -s API
 # NuGet Gallery -> install Microsoft.EntityFrameworkCore.Design for API.csproj
 ```
+
+## 2.8. Creating the database
+```bash
+dotnet ef database -h
+```
