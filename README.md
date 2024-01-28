@@ -46,3 +46,15 @@ cd API
 dotnet run
 dotnet watch run
 ```
+
+## 2.7. Creating an Entity Framework code first migration
+```bash
+# cd inside solution folder
+dotnet tool list --global
+dotnet tool install --global dotnet-ef --version 8.0.1 # https://www.nuget.org/packages/dotnet-ef
+dotnet tool update --global dotnet-ef --version 8.0.1
+
+dotnet ef -h
+dotnet ef migrations add InitialCreate -p Persistence -s API
+# NuGet Gallery -> install Microsoft.EntityFrameworkCore.Design for API.csproj
+```
