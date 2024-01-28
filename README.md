@@ -93,3 +93,9 @@ npm start
 * loosely typed objects => interfaces => compile-time errors & IntelliSense
 * optional type with question mark (?)
 * override optional type access with exclamation mark (!). should be avoided if possible
+
+## 3.10. Fetching data from the API
+```bash
+cd client-app
+npm install axios
+```
