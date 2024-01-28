@@ -63,3 +63,16 @@ dotnet ef migrations add InitialCreate -p Persistence -s API
 ```bash
 dotnet ef database -h
 ```
+
+## 2.11. Saving changes into source control
+```bash
+git status
+git init
+dotnet new -l
+dotnet new gitignore
+git add .
+
+git branch -M main
+git remote add origin https://github.com/USER/REPO
+git push -u origin main
+```
