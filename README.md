@@ -85,3 +85,11 @@ npx create-react-app client-app --use-npm --template typescript
 cd client-app
 npm start
 ```
+
+## 3.7. Typescript demo
+* type inference
+* type any
+* union type: number | string
+* loosely typed objects => interfaces => compile-time errors & IntelliSense
+* optional type with question mark (?)
+* override optional type access with exclamation mark (!). should be avoided if possible
