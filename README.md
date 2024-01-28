@@ -99,3 +99,8 @@ npm start
 cd client-app
 npm install axios
 ```
+
+## 3.12. Semantic UI React
+```bash
+npm install semantic-ui-react semantic-ui-css # https://react.semantic-ui.com/
+```
