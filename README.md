@@ -124,3 +124,8 @@ How to get the `.vscode` directory:
 ### \> Can I use NoSQL such as MongoDb with EF?
 > No, you would typically use the API provided by MongodDb, Azure  
 > Cosmos DB, Cassandra, RavenDB, Couch DB etc
+
+# 5. Creating a CRUD application in React
+
+## 5.3. Adding an Activity interface
+[json to ts](https://www.google.com/search?q=json+to+ts)
