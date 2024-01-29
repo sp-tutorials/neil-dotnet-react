@@ -104,3 +104,13 @@ npm install axios
 ```bash
 npm install semantic-ui-react semantic-ui-css # https://react.semantic-ui.com/
 ```
+
+# 4. Creating a CRUD application using the CQRS + Mediator pattern
+
+## 4.13. Using the debugger in VS Code
+
+How to get the `.vscode` directory:  
+`Ctrl + P`, then:
+```
+>.NET: generate assets for build and Debug
+```
