@@ -114,3 +114,13 @@ How to get the `.vscode` directory:
 ```
 >.NET: generate assets for build and Debug
 ```
+
+## 4.14. Summary of section 4
+
+### \> Event Sourcing?
+> Out of scope for this course but there is an excellent talk on this by  
+> Greg Young on YouTube video at: https://youtu.be/JHGkaShoyNs
+
+### \> Can I use NoSQL such as MongoDb with EF?
+> No, you would typically use the API provided by MongodDb, Azure  
+> Cosmos DB, Cassandra, RavenDB, Couch DB etc
