@@ -129,3 +129,9 @@ How to get the `.vscode` directory:
 
 ## 5.3. Adding an Activity interface
 [json to ts](https://www.google.com/search?q=json+to+ts)
+
+## 5.14. Using a GUID for the activity id
+```bash
+cd client-app && npm install uuid
+npm i --save-dev @types/uuid
+```
