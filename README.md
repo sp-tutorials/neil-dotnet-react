@@ -135,3 +135,11 @@ How to get the `.vscode` directory:
 cd client-app && npm install uuid
 npm i --save-dev @types/uuid
 ```
+
+# 6. Axios
+
+## 6.7. Summary of section 6
+
+### \> Why use Axios? Could we not just use fetch?
+> A bit too low level and axios comes with powerful features such as  
+>  interceptors.
