@@ -143,3 +143,10 @@ npm i --save-dev @types/uuid
 ### \> Why use Axios? Could we not just use fetch?
 > A bit too low level and axios comes with powerful features such as  
 >  interceptors.
+
+# 7. MobX
+
+## 7.3. Setting up MobX
+```bash
+npm install mobx mobx-react-lite
+```
