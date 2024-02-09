@@ -150,3 +150,11 @@ npm i --save-dev @types/uuid
 ```bash
 npm install mobx mobx-react-lite
 ```
+
+# 8. Routing
+
+## 8.2. Installing React Router
+```bash
+npm install react-router-dom@5.3.4
+npm install @types/react-router-dom --save-dev
+```
