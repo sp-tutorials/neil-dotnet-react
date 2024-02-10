@@ -158,3 +158,11 @@ npm install mobx mobx-react-lite
 npm install react-router-dom@5.3.4
 npm install @types/react-router-dom --save-dev
 ```
+
+# 9. Styling the User Interface
+
+## 9.7. Adding the activity filter component
+```bash
+npm install react-calendar
+# npm install @types/react-calendar # " react-calendar provides its own type definitions, so you do not need this installed"
+```
