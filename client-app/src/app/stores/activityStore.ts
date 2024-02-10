@@ -23,8 +23,7 @@ export default class ActivityStore {
         try {
             const activities = await agent.Activities.list();
             activities.forEach(activity => {
-                activity.date = activity.date.split('T')[0];
-                this.activityRegsitry.set(activity.id, activity);
+                this.setActivity(activity);
             });
             this.setLoadingInitial(false);
         } catch (error) {
@@ -37,22 +36,30 @@ export default class ActivityStore {
         this.loadingInitial = state;
     }
 
-    // IDEA: use a single function and pass (id: String | undefined) instead
-    selectActivity = (id: string) => {
-        this.selectedActivity = this.activityRegsitry.get(id);
+    loadActivity = async (id: string) => {
+        let activity = this.getActivity(id);
+        if (activity) {
+            this.selectedActivity = activity;
+        } else {
+            this.loadingInitial = true;
+            try {
+                activity = await agent.Activities.details(id);
+                this.setActivity(activity);
+                this.setLoadingInitial(false);
+            } catch (error) {
+                console.log(error);
+                this.setLoadingInitial(false);
+            }
+        }
     }
 
-    cancelSelectedActivity = () => {
-        this.selectedActivity = undefined;
+    private setActivity(activity: Activity) {
+        activity.date = activity.date.split('T')[0];
+        this.activityRegsitry.set(activity.id, activity);
     }
 
-    openForm = (id?: string) => {
-        id ? this.selectActivity(id) : this.cancelSelectedActivity();
-        this.editMode = true;
-    }
-
-    closeForm = () => {
-        this.editMode = false;
+    private getActivity = (id: string) => {
+        return this.activityRegsitry.get(id);
     }
 
     createActivity = async (activity: Activity) => {
@@ -98,7 +105,6 @@ export default class ActivityStore {
             await agent.Activities.delete(id);
             runInAction(() => {
                 this.activityRegsitry.delete(id);
-                if (this.selectedActivity?.id === id) this.cancelSelectedActivity();
                 this.loading = false;
             });
         } catch (error) {
