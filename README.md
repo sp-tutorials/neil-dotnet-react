@@ -166,3 +166,9 @@ npm install @types/react-router-dom --save-dev
 npm install react-calendar
 # npm install @types/react-calendar # " react-calendar provides its own type definitions, so you do not need this installed"
 ```
+
+# 10. Error handling
+
+## 10.2. Validation with data annotations
+
+https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-5.0#apicontroller-attribute-2
