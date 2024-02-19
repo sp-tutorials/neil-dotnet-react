@@ -172,3 +172,7 @@ npm install react-calendar
 ## 10.2. Validation with data annotations
 
 https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-5.0#apicontroller-attribute-2
+
+## 10.8. Handling exceptions 
+
+https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-5.0
