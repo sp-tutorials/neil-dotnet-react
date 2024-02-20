@@ -176,3 +176,9 @@ https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-5.0#apico
 ## 10.8. Handling exceptions 
 
 https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-5.0
+
+## 10.9. Preparing for setting up error handling in the client app
+
+```bash
+npm install react-toastify
+```
