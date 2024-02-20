@@ -182,3 +182,12 @@ https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspn
 ```bash
 npm install react-toastify
 ```
+
+## 10.15. Summary of section 10
+
+### \> Is the use of fluent validation breaking clean architecture principals?
+> The question to ask is - can I change the API to something like a 
+> console app without changing the logic in the Application (Use 
+> cases) layer. For practical and pragmatic reasons we used a 
+> feature of Fluent Validation to use a method it provides to configure 
+> our API to use the response from Fluent validation as an API response.
