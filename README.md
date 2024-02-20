@@ -191,3 +191,17 @@ npm install react-toastify
 > cases) layer. For practical and pragmatic reasons we used a 
 > feature of Fluent Validation to use a method it provides to configure 
 > our API to use the response from Fluent validation as an API response.
+
+# 11. Forms
+
+# 11.2. Setting up Formik
+
+https://formik.org/
+
+```bash
+npm install formik
+```
+
+VS Code shortcuts:
+Ctrl+D -> select word
+Ctrl+Shift+L -> select all occurrences
