@@ -16,6 +16,7 @@
     "mobx-react-lite": "^4.0.5",
     "react": "^18.2.0",
     "react-calendar": "^4.8.0",
+    "react-datepicker": "^6.1.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.3.4",
     "react-scripts": "5.0.1",
@@ -52,6 +53,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-datepicker": "^6.0.1",
     "@types/react-router-dom": "^5.3.3",
     "@types/uuid": "^9.0.8"
   }

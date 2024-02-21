@@ -218,3 +218,11 @@ https://formik.org/docs/guides/validation
 npm install yup
 # npm install @types/yup --save-dev # yup provides its own type definitions, so you do not need this installed.
 ```
+
+# 11.8. Creating a reusable date input
+
+https://reactdatepicker.com/
+```bash
+npm install react-datepicker
+npm install @types/react-datepicker --save-dev
+```
