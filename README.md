@@ -205,3 +205,8 @@ npm install formik
 VS Code shortcuts:
 Ctrl+D -> select word
 Ctrl+Shift+L -> select all occurrences
+
+# 11.3. Formik with less code
+
+https://formik.org/docs/overview  
+https://formik.org/docs/api/formik
