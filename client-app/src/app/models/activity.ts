@@ -1,7 +1,7 @@
 export interface Activity { // https://www.google.com/search?q=json+to+ts
     id: string
     title: string
-    date: string
+    date: Date | null
     description: string
     category: string
     city: string
