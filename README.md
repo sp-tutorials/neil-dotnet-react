@@ -210,3 +210,11 @@ Ctrl+Shift+L -> select all occurrences
 
 https://formik.org/docs/overview  
 https://formik.org/docs/api/formik
+
+# 11.4. Validation in Formik
+
+https://formik.org/docs/guides/validation
+```bash
+npm install yup
+# npm install @types/yup --save-dev # yup provides its own type definitions, so you do not need this installed.
+```
