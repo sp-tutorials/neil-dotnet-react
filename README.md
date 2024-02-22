@@ -194,7 +194,7 @@ npm install react-toastify
 
 # 11. Forms
 
-# 11.2. Setting up Formik
+## 11.2. Setting up Formik
 
 https://formik.org/
 
@@ -206,12 +206,12 @@ VS Code shortcuts:
 Ctrl+D -> select word
 Ctrl+Shift+L -> select all occurrences
 
-# 11.3. Formik with less code
+## 11.3. Formik with less code
 
 https://formik.org/docs/overview  
 https://formik.org/docs/api/formik
 
-# 11.4. Validation in Formik
+## 11.4. Validation in Formik
 
 https://formik.org/docs/guides/validation
 ```bash
@@ -219,7 +219,7 @@ npm install yup
 # npm install @types/yup --save-dev # yup provides its own type definitions, so you do not need this installed.
 ```
 
-# 11.8. Creating a reusable date input
+## 11.8. Creating a reusable date input
 
 https://reactdatepicker.com/
 ```bash
@@ -227,7 +227,7 @@ npm install react-datepicker
 npm install @types/react-datepicker --save-dev
 ```
 
-# 11.10. Using Date-FNS
+## 11.10. Using Date-FNS
 
 ```bash
 npm ls date-fns
