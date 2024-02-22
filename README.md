@@ -226,3 +226,17 @@ https://reactdatepicker.com/
 npm install react-datepicker
 npm install @types/react-datepicker --save-dev
 ```
+
+# 11.10. Using Date-FNS
+
+```bash
+npm ls date-fns
+npm install date-fns@VERSION 
+```
+or just
+```bash
+npm install $(npm ls date-fns | grep -o "date-fns@[0-9.]+" | uniq)
+```
+
+https://date-fns.org/
+https://date-fns.org/v3.3.1/docs/format
