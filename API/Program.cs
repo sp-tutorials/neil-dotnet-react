@@ -14,6 +14,7 @@ builder.Services.AddControllers().AddFluentValidation(config =>
     config.RegisterValidatorsFromAssemblyContaining<Create>();
 });
 builder.Services.AddAplicationServices(builder.Configuration);
+builder.Services.AddIdentityServices(builder.Configuration);
 
 var app = builder.Build();
 
