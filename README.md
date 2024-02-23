@@ -242,3 +242,13 @@ https://date-fns.org/
 https://date-fns.org/v3.3.1/docs/format
 
 # 12. Identity
+
+## 12.3. Adding an IdentityDbContext
+
+```bash
+dotnet restore # if the VS quick fix does not work
+```
+
+```bash
+dotnet ef migrations add IdentityAdded -p Persistence/ -s API/
+```
