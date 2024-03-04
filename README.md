@@ -252,3 +252,7 @@ dotnet restore # if the VS quick fix does not work
 ```bash
 dotnet ef migrations add IdentityAdded -p Persistence/ -s API/
 ```
+
+## 12.11. Storing secrets in development
+
+https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-5.0
