@@ -267,3 +267,5 @@ https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetco
 > Sure, at the moment we are using HTTP so its possible to read the 
 > header in clear text and this can be stolen. In production we use
 > HTTPS which means both header and payload are encrypted.
+
+# 13. Client side login and registration
