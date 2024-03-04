@@ -256,3 +256,14 @@ dotnet ef migrations add IdentityAdded -p Persistence/ -s API/
 ## 12.11. Storing secrets in development
 
 https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-5.0
+
+## 12.16. Summary of section 12
+
+### \> Our token is valid for 7 days - this is insecure!
+> We are not even checking token expiry as a token validation
+> parameter so the expiry doesn't matter. We address this later.
+
+### \> We are sending the token over the network. This can be retrieved by a man in the middle!
+> Sure, at the moment we are using HTTP so its possible to read the 
+> header in clear text and this can be stolen. In production we use
+> HTTPS which means both header and payload are encrypted.
