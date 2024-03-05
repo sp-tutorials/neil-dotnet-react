@@ -306,3 +306,7 @@ dotnet add reference ../Infrastructure/
 cd ..
 dotnet restore
 ```
+
+## 14.6. Loading related data
+
+https://learn.microsoft.com/en-us/ef/ef6/querying/related-data#eagerly-loading
