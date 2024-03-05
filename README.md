@@ -293,3 +293,16 @@ dotnet ef migrations add ActivityAttendee -p Persistence/ -s API/
 dotnet ef migrations remove -p Persistence/ -s API/
 dotnet ef migrations add ActivityAttendee -p Persistence/ -s API/
 ```
+
+## 14.3. Adding an infrastructure project
+
+```bash
+dotnet new classlib -n Infrastructure
+dotnet sln add Infrastructure/
+cd Infrastructure/
+dotnet add reference ../Application/
+cd ../API/
+dotnet add reference ../Infrastructure/
+cd ..
+dotnet restore
+```
