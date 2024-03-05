@@ -283,3 +283,13 @@ https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetco
 > If an attacker can run malicious javascript on your application then a
 > JWT stored in localStorage is the least of your problems. This is
 > what we will address later.
+
+# 14. Entity Framework Relationships
+
+## 14.2. Configuring the new relationship
+
+```bash
+dotnet ef migrations add ActivityAttendee -p Persistence/ -s API/
+dotnet ef migrations remove -p Persistence/ -s API/
+dotnet ef migrations add ActivityAttendee -p Persistence/ -s API/
+```
