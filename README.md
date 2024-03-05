@@ -269,3 +269,17 @@ https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetco
 > HTTPS which means both header and payload are encrypted.
 
 # 13. Client side login and registration
+
+## 13.13. Summary of section 13
+
+### \> Storing JWT token in local storage is insecure!
+> It can be. Weaknesses include:
+> 1. XSS attacks. Javascript can access localStorage. This
+> requires the attacker to execute malicious javascript on your
+> application.
+> 2. Local machine privileges. Anyone who has admin access can
+> access localStorage for another user account.  
+> 
+> If an attacker can run malicious javascript on your application then a
+> JWT stored in localStorage is the least of your problems. This is
+> what we will address later.
