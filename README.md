@@ -310,3 +310,8 @@ dotnet restore
 ## 14.6. Loading related data
 
 https://learn.microsoft.com/en-us/ef/ef6/querying/related-data#eagerly-loading
+
+## 14.9. Adding the attendance handler
+```bash
+dotnet ef migrations add AddCancelledProperty -p Persistence/ -s API
+```
