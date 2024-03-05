@@ -315,3 +315,8 @@ https://learn.microsoft.com/en-us/ef/ef6/querying/related-data#eagerly-loading
 ```bash
 dotnet ef migrations add AddCancelledProperty -p Persistence/ -s API
 ```
+
+## 14.12. Updating the seed data
+```bash
+dotnet ef database drop -p Persistence/ -s API/
+```
