@@ -10,5 +10,8 @@ export interface Activity { // https://www.google.com/search?q=json+to+ts
     venue: string
     hostUsername?: string
     isCancelled?: boolean
+    isGoing?: boolean
+    isHost?: boolean
+    host?: Profile
     attendees?: Profile[]
 }
