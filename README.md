@@ -324,3 +324,9 @@ dotnet ef database drop -p Persistence/ -s API/
 # 15. Feature - Client side attendance
 
 # 16. API Image upload
+
+## 16.5. Adding the Photo entity
+
+```bash
+dotnet ef migrations add PhotoEntityAdded -p Persistence/ -s API/
+```
