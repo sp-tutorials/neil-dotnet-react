@@ -322,3 +322,5 @@ dotnet ef database drop -p Persistence/ -s API/
 ```
 
 # 15. Feature - Client side attendance
+
+# 16. API Image upload
