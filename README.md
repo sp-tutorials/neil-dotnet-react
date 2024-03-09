@@ -355,3 +355,15 @@ https://github.com/react-cropper/react-cropper
 ```bash
 npm install react-cropper
 ```
+
+## 17.16. Summary of section 17
+
+### \> When the user changes their main photo, then navigates back to the activities the host and attendee images are not updated. Is this a bug?
+> I prefer to refer to this as "not implemented feature". You know
+> how to update state in the store, you also know how to loop over
+> arrays and update elements in arrays and have the react
+> components react to this change. Consider this a small challenge
+> to implement this if you want to add it.
+> 
+> Note: Not all apps will update lists immediately when a user
+> changes something due to the performance gains from caching.
