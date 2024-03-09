@@ -330,3 +330,10 @@ dotnet ef database drop -p Persistence/ -s API/
 ```bash
 dotnet ef migrations add PhotoEntityAdded -p Persistence/ -s API/
 ```
+
+# 16.13. Summary of section 16
+
+### \> Can you show me how to upload files to file system or SQL?
+> I cannot cover everything about everything in a training course, but
+> the documentation provides (just search for "upload files in
+> ASP.NET Core" for code examples)
