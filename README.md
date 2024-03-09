@@ -339,3 +339,11 @@ dotnet ef migrations add PhotoEntityAdded -p Persistence/ -s API/
 > ASP.NET Core" for code examples)
 
 # 17. Client image upload
+
+## 17.10. Adding a Dropzone
+
+https://github.com/react-dropzone/react-dropzone
+
+```bash
+npm install react-dropzone
+```
