@@ -337,3 +337,5 @@ dotnet ef migrations add PhotoEntityAdded -p Persistence/ -s API/
 > I cannot cover everything about everything in a training course, but
 > the documentation provides (just search for "upload files in
 > ASP.NET Core" for code examples)
+
+# 17. Client image upload
