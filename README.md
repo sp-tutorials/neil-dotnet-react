@@ -347,3 +347,11 @@ https://github.com/react-dropzone/react-dropzone
 ```bash
 npm install react-dropzone
 ```
+
+## 17.12. Adding a react cropper
+
+https://github.com/react-cropper/react-cropper
+
+```bash
+npm install react-cropper
+```
