@@ -12,9 +12,9 @@ namespace API.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> EditProfile(Edit.Command command)
+        public async Task<IActionResult> EditProfile(Profile profile)
         {
-            return HandleResult(await Mediator.Send(command));
+            return HandleResult(await Mediator.Send(new Edit.Command { Profile = profile }));
         }
     }
 }

@@ -96,10 +96,12 @@ export default class ProfileStore {
         try {
             await agent.Profiles.update(profile);
             runInAction(() => {
-                if (profile.displayName && profile.displayName !== store.userStore.user?.displayName) {
-                    store.userStore.setDisplayName(profile.displayName);
+                if (this.profile) {
+                    this.profile = { ...this.profile, ...profile as Profile };
+                    if (store.userStore.user) {
+                        store.userStore.user.displayName = profile.displayName!;
+                    }
                 }
-                this.profile = { ...this.profile, ...profile as Profile };
                 this.loading = false;
             });
         } catch (error) {
