@@ -367,3 +367,5 @@ npm install react-cropper
 > 
 > Note: Not all apps will update lists immediately when a user
 > changes something due to the performance gains from caching.
+
+# 18. Challenge
