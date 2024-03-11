@@ -369,3 +369,11 @@ npm install react-cropper
 > changes something due to the performance gains from caching.
 
 # 18. Challenge
+
+# 19. SignalR
+
+## 19.2. Setting up the comment entity
+
+```bash
+dotnet ef migrations add CommentEntityAdded -p Persistence/ -s API
+```
