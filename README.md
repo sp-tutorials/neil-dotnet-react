@@ -377,3 +377,9 @@ npm install react-cropper
 ```bash
 dotnet ef migrations add CommentEntityAdded -p Persistence/ -s API
 ```
+
+## 19.8. Adding SignalR to the client
+
+```bash
+npm install @microsoft/signalr
+```
