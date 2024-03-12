@@ -429,10 +429,22 @@ npm install @microsoft/signalr
 > Think about scalability though. Just because you can...does not
 > mean you always should!
 
-# 20. Followers  Following feature
+# 20. Followers Following feature
 
 ## 20.2. Adding a join entity
 
 ```bash
 dotnet ef migrations add FollowingEntityAdded -p Persistence/ -s API/
+```
+
+## 20.14. Summary of section 20
+
+### \> How can I generate the relationship model that you used in the slides?
+
+> https://vertabelo.com
+>
+> You can generate a SQL script from your migration, then create a physical model
+
+```bash
+dotnet ef migrations script -o test.sql -p Persistence/ -s API/
 ```
