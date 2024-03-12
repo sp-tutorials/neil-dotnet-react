@@ -448,3 +448,5 @@ dotnet ef migrations add FollowingEntityAdded -p Persistence/ -s API/
 ```bash
 dotnet ef migrations script -o test.sql -p Persistence/ -s API/
 ```
+
+# 21. Paging, Sorting and Filtering
