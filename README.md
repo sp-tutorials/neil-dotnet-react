@@ -428,3 +428,11 @@ npm install @microsoft/signalr
 >
 > Think about scalability though. Just because you can...does not
 > mean you always should!
+
+# 20. Followers  Following feature
+
+## 20.2. Adding a join entity
+
+```bash
+dotnet ef migrations add FollowingEntityAdded -p Persistence/ -s API/
+```
