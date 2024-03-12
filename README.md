@@ -450,3 +450,10 @@ dotnet ef migrations script -o test.sql -p Persistence/ -s API/
 ```
 
 # 21. Paging, Sorting and Filtering
+
+## 21.8. Adding infinite scrolling
+
+```bash
+npm install react-infinite-scroller
+npm install @types/react-infinite-scroller
+```
