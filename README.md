@@ -463,3 +463,13 @@ npm install @types/react-infinite-scroller
 ## 22.4. Prepping the client app for production
 
 https://create-react-app.dev/docs/adding-custom-environment-variables/
+
+## 22.5. Building the production build of the react app
+
+https://create-react-app.dev/docs/getting-started/#npm-run-build-or-yarn-build
+
+https://create-react-app.dev/docs/production-build/
+
+```bash
+npm run build
+```
