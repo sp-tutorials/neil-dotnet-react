@@ -459,3 +459,7 @@ npm install @types/react-infinite-scroller
 ```
 
 # 22. Finishing touches and publishing
+
+## 22.4. Prepping the client app for production
+
+https://create-react-app.dev/docs/adding-custom-environment-variables/
