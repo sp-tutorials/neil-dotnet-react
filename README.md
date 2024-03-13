@@ -457,3 +457,5 @@ dotnet ef migrations script -o test.sql -p Persistence/ -s API/
 npm install react-infinite-scroller
 npm install @types/react-infinite-scroller
 ```
+
+# 22. Finishing touches and publishing
