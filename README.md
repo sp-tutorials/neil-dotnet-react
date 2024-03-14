@@ -520,3 +520,7 @@ DATABASE_URL
 TokenKey
 ASPNETCORE_ENVIRONMENT
 ```
+
+# 22.11. Security tightening
+
+https://securityheaders.com/
