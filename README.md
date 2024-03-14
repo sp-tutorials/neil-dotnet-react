@@ -533,3 +533,9 @@ TokenKey="super secret key that is very long and enough to reach the minimum len
 DATABASE_URL='postgres://admin:secret@localhost:5432/reactivities' \
 dotnet watch run --urls https://*:5000
 ```
+
+# 23. Bonus section - Identity Cookbook
+
+## 23.2. Setting up Facebook login
+
+https://developers.facebook.com/
