@@ -498,6 +498,25 @@ dotnet tool update -g dotnet-ef
 
 postgres docker delete database ->
 https://stackoverflow.com/questions/53974488/how-to-delete-and-recreate-a-postgres-database-using-a-single-docker-command
+
 ```bash
 docker exec -it dev psql -U admin -d postgres -c "DROP DATABASE reactivities;"
+```
+
+## 22.9. Setting up Heroku
+
+https://www.heroku.com/
+
+https://passwordsgenerator.net/ 32 chars, w/o special symbols
+
+https://github.com/jincod/dotnetcore-buildpack
+
+env vars:
+```
+Cloudinary:ApiKey
+Cloudinary:ApiSecret
+Cloudinary:CloudName
+DATABASE_URL
+TokenKey
+ASPNETCORE_ENVIRONMENT
 ```
