@@ -27,6 +27,11 @@ builder.Services.AddApplicationServices(builder.Configuration);
 builder.Services.AddIdentityServices(builder.Configuration);
 
 var app = builder.Build();
+//        ---> System.ArgumentException: Cannot write DateTime with Kind=Local to PostgreSQL type 'timestamp with time zone', only UTC is supported. 
+// Note that it's not possible to mix DateTimes with different Kinds in an array, range, or multirange. (Parameter 'value')
+// https://stackoverflow.com/questions/69961449/net6-and-datetime-problem-cannot-write-datetime-with-kind-utc-to-postgresql-ty
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+
 
 app.UseMiddleware<ExceptionMiddleware>();
 

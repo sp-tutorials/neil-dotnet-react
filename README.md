@@ -483,3 +483,21 @@ https://www.docker.com/products/docker-desktop/
 ```bash
 docker run --name dev -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=secret -p 5432:5432 -d postgres:latest
 ```
+
+## 22.8. Switching to PostGresQL
+
+https://learn.microsoft.com/en-us/ef/core/providers/?tabs=dotnet-core-cli
+
+```bash
+dotnet ef migrations add PGInitial -p Persistence/ -s API/
+```
+
+```bash
+dotnet tool update -g dotnet-ef
+```
+
+postgres docker delete database ->
+https://stackoverflow.com/questions/53974488/how-to-delete-and-recreate-a-postgres-database-using-a-single-docker-command
+```bash
+docker exec -it dev psql -U admin -d postgres -c "DROP DATABASE reactivities;"
+```
