@@ -524,3 +524,12 @@ ASPNETCORE_ENVIRONMENT
 # 22.11. Security tightening
 
 https://securityheaders.com/
+
+```bash
+# trying to run in Production mode (actually launchSettings env vars have the highest precendence)
+DOTNET_ENVIRONMENT=Production \
+ASPNETCORE_ENVIRONMENT=Production \
+TokenKey="super secret key that is very long and enough to reach the minimum length required by the algorithm" \
+DATABASE_URL='postgres://admin:secret@localhost:5432/reactivities' \
+dotnet watch run --urls https://*:5000
+```
