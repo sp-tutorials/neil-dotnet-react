@@ -482,6 +482,7 @@ https://www.docker.com/products/docker-desktop/
 
 ```bash
 docker run --name dev -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=secret -p 5432:5432 -d postgres:latest
+# docker restart dev
 ```
 
 ## 22.8. Switching to PostGresQL
