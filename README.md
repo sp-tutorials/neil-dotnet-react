@@ -558,3 +558,9 @@ Facebook Login cannot disable https
 2. facebook login Sorry, something went wrong. We're working on getting this fixed as soon as we can.  
 -> https://developers.facebook.com/community/threads/533540185516580/  
 -> Basically you just need to got to the Meta for Developers page, under “Build your App” click in “Use Cases”, and finally under “Authentication and account creation” click on the edit button and add the email permission.
+
+## 23.8. Redeploying the app to Heroku
+
+```bash
+npm install rimraf --save-dev
+```
