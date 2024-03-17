@@ -482,6 +482,7 @@ https://www.docker.com/products/docker-desktop/
 
 ```bash
 docker run --name dev -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=secret -p 5432:5432 -d postgres:latest
+# docker restart dev
 ```
 
 ## 22.8. Switching to PostGresQL
@@ -532,4 +533,34 @@ ASPNETCORE_ENVIRONMENT=Production \
 TokenKey="super secret key that is very long and enough to reach the minimum length required by the algorithm" \
 DATABASE_URL='postgres://admin:secret@localhost:5432/reactivities' \
 dotnet watch run --urls https://*:5000
+```
+
+# 23. Bonus section - Identity Cookbook
+
+## 23.2. Setting up Facebook login
+
+https://developers.facebook.com/
+
+## 23.4. Adding the Facebook JS SDK
+
+https://developers.facebook.com/docs/facebook-login/web
+
+```bash
+npm install @types/facebook-js-sdk --save-dev
+```
+
+in order for it to work:
+1. https://developers.facebook.com/docs/facebook-login/security/#enablejssdk  
+Facebook Login cannot disable https  
+-> https://stackoverflow.com/questions/61263234/how-to-disable-enforce-https-for-facebook-auth-at-localhost  
+-> https://stackoverflow.com/questions/49400199/does-facebook-sdk-require-https  
+-> Enable ***Login with the JavaScript SDK*** and add `http://localhost:3000` to ***Allowed Domains for the JavaScript SDK***
+2. facebook login Sorry, something went wrong. We're working on getting this fixed as soon as we can.  
+-> https://developers.facebook.com/community/threads/533540185516580/  
+-> Basically you just need to got to the Meta for Developers page, under “Build your App” click in “Use Cases”, and finally under “Authentication and account creation” click on the edit button and add the email permission.
+
+## 23.8. Redeploying the app to Heroku
+
+```bash
+npm install rimraf --save-dev
 ```
