@@ -564,3 +564,9 @@ Facebook Login cannot disable https
 ```bash
 npm install rimraf --save-dev
 ```
+
+## 23.10. Adding the Refresh token domain entity
+
+```bash
+dotnet ef migrations add RefreshTokens -p Persistence/ -s API/
+```
