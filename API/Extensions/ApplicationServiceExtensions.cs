@@ -1,6 +1,7 @@
 using Application.Activities;
 using Application.Core;
 using Application.Interfaces;
+using Infrastructure.Email;
 using Infrastructure.Photos;
 using Infrastructure.Security;
 using MediatR;
@@ -68,6 +69,7 @@ namespace API.Extensions
             services.AddAutoMapper(typeof(MappingProfiles).Assembly);
             services.AddScoped<IUserAccessor, UserAccessor>();
             services.AddScoped<IPhotoAccessor, PhotoAccessor>();
+            services.AddScoped<EmailSender>();
             services.Configure<ClodinarySettings>(config.GetSection("Cloudinary"));
             services.AddSignalR();
 
