@@ -574,3 +574,7 @@ dotnet ef migrations add RefreshTokens -p Persistence/ -s API/
 ## 23.18. Setting up SendGrid
 
 using [app.mailersend.com](https://app.mailersend.com/) because [sendgrid.com](https://sendgrid.com/) doesn't allow me to create an account
+
+## 23.22. Testing in Postman
+
+https://10minutemail.net/
