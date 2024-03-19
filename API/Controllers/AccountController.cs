@@ -1,10 +1,13 @@
 using System.Security.Claims;
+using System.Text;
 using API.DTOs;
 using API.Services;
 using Domain;
+using Infrastructure.Email;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 
@@ -19,9 +22,12 @@ namespace API.Controllers
         private readonly TokenService _tokenService;
         private readonly IConfiguration _config;
         private readonly HttpClient _httpClient;
+        private readonly EmailSender _emailSender;
         public AccountController(UserManager<AppUser> userManager,
-            SignInManager<AppUser> signInManager, TokenService tokenService, IConfiguration config)
+            SignInManager<AppUser> signInManager, TokenService tokenService,
+            IConfiguration config, EmailSender emailSender)
         {
+            _emailSender = emailSender;
             _config = config;
             _tokenService = tokenService;
             _signInManager = signInManager;
@@ -80,13 +86,17 @@ namespace API.Controllers
 
             var result = await _userManager.CreateAsync(user, registerDto.Password);
 
-            if (result.Succeeded)
-            {
-                await SetRefreshToken(user);
-                return CreateUserObject(user);
-            }
+            if (!result.Succeeded) return BadRequest("Problem registering user");
 
-            return BadRequest("Problem registering user");
+            var origin = Request.Headers["origin"];
+            var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+            token = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(token));
+
+            var verifyUrl = $"{origin}/account/verifyEmail?token={token}&email={user.Email}";
+            var message = $"<p>Please click the below link to verify your email address:</p><p><a href='{verifyUrl}'>Click to verify email</a></p>";
+            await _emailSender.SendEmailAsync(user.Email, "Please verify email", message);
+
+            return Ok("Registration success - please verify email");
         }
 
         [Authorize]
