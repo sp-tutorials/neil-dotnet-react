@@ -570,3 +570,7 @@ npm install rimraf --save-dev
 ```bash
 dotnet ef migrations add RefreshTokens -p Persistence/ -s API/
 ```
+
+## 23.18. Setting up SendGrid
+
+using [app.mailersend.com](https://app.mailersend.com/) because [sendgrid.com](https://sendgrid.com/) doesn't allow me to create an account
